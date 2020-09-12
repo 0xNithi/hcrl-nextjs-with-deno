@@ -32,7 +32,7 @@ const Navbar = ({ inputText, inputHandler, buttonHandler }) => {
 					darkMode ? 'text-white' : ''
 				}`}
 			>
-				<div>
+				<div className='lg:w-4/12'>
 					<span className='bg-red-600 py-1 px-2 rounded-lg text-white'>
 						HCRL
 					</span>
@@ -43,7 +43,7 @@ const Navbar = ({ inputText, inputHandler, buttonHandler }) => {
 					</span>
 					<sup className='ml-1 text-gray-600'>kmitl</sup>
 				</div>
-				<div className='flex items-center w-full sm:w-8/12 space-x-4'>
+				<div className='flex items-center lg:w-8/12 space-x-4'>
 					<div className='flex w-full'>
 						<label
 							htmlFor='search'

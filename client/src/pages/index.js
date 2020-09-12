@@ -18,13 +18,16 @@ export default function Home() {
 		setLoading(true);
 
 		const data = { q: inputText };
-		const res = await fetch('http://localhost/api/youtube/search', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(data),
-		});
+		const res = await fetch(
+			'http://celab.network:3000/api/youtube/search',
+			{
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(data),
+			}
+		);
 		const json = await res.json();
 		setSearchResult(json);
 	};

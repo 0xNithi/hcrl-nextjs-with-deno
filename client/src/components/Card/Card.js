@@ -27,18 +27,22 @@ const Card = ({ item }) => {
 				onMouseMove={mouseMoveHandler}
 			>
 				<img
-					className='w-2/4 md:w-1/4'
+					className='w-2/4 md:w-1/4 object-cover'
 					src={item.snippet.thumbnails.high.url}
 					alt={item.snippet.title}
 				/>
-				<div className='w-2/4 md:w-3/4 pl-4'>
+				<div className='w-2/4 md:w-3/4 pl-4 space-y-2'>
 					<p className='font-bold text-md md:text-lg break-words'>
 						{item.snippet.title}
 					</p>
 					<p className='hidden text-sm md:text-md md:block break-words'>
 						{item.snippet.description}
 					</p>
-					<p className='text-sm md:text-md text-gray-500 break-words'>
+					<p
+						className={`text-sm md:text-md ${
+							darkMode ? 'text-gray-100' : 'text-gray-900'
+						} break-words`}
+					>
 						{item.snippet.channelTitle}
 					</p>
 				</div>

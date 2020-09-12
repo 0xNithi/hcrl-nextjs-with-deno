@@ -28,7 +28,3 @@
 .card:hover::before {
 	--size: calc(100vw);
 }
-
-.card:hover {
-	color: white;
-}
