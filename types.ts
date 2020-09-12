@@ -1,0 +1,3 @@
+interface Search {
+	q: string;
+}
