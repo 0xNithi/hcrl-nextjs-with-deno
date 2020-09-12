@@ -19,7 +19,7 @@ export default function Home() {
 
 		const data = { q: inputText };
 		const res = await fetch(
-			'http://celab.network:3000/api/youtube/search',
+			'https://www.celab.network/api/youtube/search',
 			{
 				method: 'POST',
 				headers: {
